@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Zimmermann Telegram</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+
+    <body>
+        <div id="header">
+            <h4>
+                Zimmermann Telegram Cryptography
+            </h4>
+        </div>
+
+        <div id="wrapper">
+            <p>Axis values:</p>
+            <input type="text" id="axisVals" />
+            <br />
+            <br />
+            <p>Grid values:</p>
+            <input type="text" id="gridVals" />
+            <br />
+            <br />
+            <p>Message to encrypt/decrypt:</p>
+            <input type="text" id="userIn" />
+            <br />
+            <br />
+            <button id="encButton" onclick="encFromDoc()">Encrypt</button>
+            <button id="decButton" onclick="decFromDoc()">Decrypt</button>
+            <br />
+            <br />
+            <br />
+            <p>Output:</p>
+            <br />
+            <p id="outputDisplay"></p>
+        </div>
+
+        <div id="footer">
+            <h4>
+		    Licensed under MIT License. See the <a href="https://git.benoneill.xyz/zimmermanntel/files">git repo</a> for more details.
+            </h4>
+        </div>
+
+        <script src="ztel.js"></script>
+    </body>
+
+</html>

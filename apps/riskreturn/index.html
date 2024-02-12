@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Risk Return Calculator</title>
+	<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+	<div id="wrapper">
+	<h1>Risk Return Calculator</h1>
+	<p id="description">This calculator shows the risk/reward relationship and that steady contributions in an index fund over long investment horizons (10 years or more) can accumulate wealth even through periods of market declines.  This calculator uses historical monthly returns from 1999 to 2021 to show how steady contributions in an index fund can accumulate over time. Enter a monthly investment, a start date, and an end date.  This calculator assumes periodic investments in the QQQ which tracks the NASDAQ index.</p>
+	<br><br>
+	<form id="inform">
+		<label for="ubegin">Monthly Investment:</label><br>
+		<input type="text" id="ubegin">
+		<br><br>
+
+		<label for="sdate">Start date (any month from 04/1999 to 03/2021 in that format):</label><br>
+		<input type="text" id="sdate">
+		<br><br>
+
+		<label for="edate">End date: (any month from 04/1999 to 03/2021 in that format):</label><br>
+		<input type="text" id="edate">
+		<br><br>
+
+		<input type="button" onclick="riskreturncalc()" value="Calculate">
+	</form>
+	<div class="result">
+		<h2>Your results:</h2>
+		<ul>
+			<li>Total invested: <b id="user_invested">Nothing yet</b></li>
+			<li>Ending value: <b id="user_end">Nothing yet</b></li>
+			<li>Average annual return: <b id="user_return">Nothing yet</b></li>
+		</ul>
+		<h2>NASDAQ results:</h2>
+		<ul>
+			<li>Beginning value: <b id="nasdaq_begin">Nothing yet</b></li>
+			<li>Ending value: <b id="nasdaq_end">Nothing yet</b></li>
+			<li>Average annual return: <b id="nasdaq_return">Nothing yet</b></li>
+		</ul>
+	</div>
+
+	<div class="message">
+		<p id="message"></p>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.min.js"></script>
+	<script src="rate.js"></script>
+	<script src="data.js"></script>
+	<script src="riskreturn.js"></script>
+	</div>
+</body>
+</html>

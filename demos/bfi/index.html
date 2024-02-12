@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Brainfuck</title>
+	<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+	<small><a href="/">home</a></small>
+	<small><a href="../">back</a></small>
+	<div id="wrapper">
+		<h1>Brainfuck Interpreter </h1>
+		<label for="input">Input</label>
+		<textarea id="input" name="input" rows="1" cols="50"></textarea>
+		<br>
+		<label for="program">Program</label>
+		<textarea id="program" name="program" rows="5" cols="50"></textarea>
+		<br>
+		<button onclick="run()">Run</button>
+		<p id="output"></p>
+	</div>
+
+	<script src="bfi.js"></script>
+</body>
+</html>

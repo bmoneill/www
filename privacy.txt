@@ -1,0 +1,13 @@
+Privacy Notice for oneill.sh:
+
+NGINX Access logs are stored on the web server for ten days. They are
+used to count the number of unique connections each week for
+analytical purposes. The logs are destroyed after the ten day period
+and are not shared with any third party. The number of unique IP
+addresses that connected per week is kept indefinitely. The IP
+addresses are not kept.
+
+No other data is stored.
+
+Further queries can be sent to the site owner via this email address:
+ben@oneill.sh

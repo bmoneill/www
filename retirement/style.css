@@ -1,0 +1,77 @@
+body {
+	font: 1.4em sans-serif;
+	background-color: #eee;
+	color: #111;
+	padding: 1em;
+	max-width: 60rem;
+	margin: auto;
+}
+
+h1 {
+	text-align: center;
+}
+
+button {
+}
+
+a {
+	text-decoration: none;
+	color: #74A38A;
+}
+
+a:visited {
+	text-decoration: none;
+	color: #74A38A;
+}
+
+li {
+	padding: 0.5em;
+}
+
+input {
+	margin: 0.5em;
+}
+
+h4 {
+	color: green;
+}
+
+#result {
+	color: #198754;
+}
+
+footer {
+	bottom: 0;
+}
+.carousel-inner {
+	background-color: #bbb;
+	border-radius: 0.4em;
+	padding-top: 2em;
+	padding-left: 2em;
+	padding-right: 2em;
+	height: 20em;
+	text-align: center;
+	font: 1.2em sans-serif;
+	margin: 0 auto;
+}
+
+table {
+	font: 0.55em sans-serif;
+	overflow: auto;
+}
+table, th, td {
+	border: 3px solid;
+}
+
+th, td {
+	padding: 0.5em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	margin: 0.2em;
+}
+
+@media (min-width:1200px) { 
+	table {
+		font: 1em sans-serif;
+	}
+}

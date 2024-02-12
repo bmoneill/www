@@ -1,0 +1,91 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="/favicon.png" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="Content-Language" content="en" />
+	<meta name="keywords" content="" />
+	<meta name="description" content="How To Create a Remote SSH Gateway to a Local OpenBSD Server">
+	<title>How To Create a Remote SSH Gateway to a Local OpenBSD Server - Ben O'Neill's Blog</title>
+	<link rel="stylesheet" href="/style.css">
+	<link rel="alternate" type="application/rss+xml" href="/rss.xml" title="Ben O'Neill's Blog">
+</head>
+<body>
+	<small><a href="../index.html">home</a></small>
+	<div id="wrapper">
+<h1>How To Create a Remote SSH Gateway to a Local OpenBSD Server</h1>
+<p>Hosting a server on your local network can provide many advantages, such as
+access to the physical hardware and easy interaction with other devices on the
+network. However, by default you will not be able to access it from outside that
+network.</p>
+<p>I recently set up a OpenBSD server on a Thinkpad T60, and I have multiple users
+connecting to it for development as well as recreational use (I have installed
+a few CLI games for fun). It is hosted on my university's network, so users can
+connect to it locally from anywhere on campus. I also wanted to be able to
+access it remotely as well through the internet. To achieve this, I set up a
+reverse SSH tunnel on the Thinkpad using <code>autossh</code>, and I have it running as a
+daemon now.</p>
+<p>In order to do this, first you must first have a server connected to the
+internet (I am using a Vultr VPS instance running Debian 11). It is fairly
+straightforward from there.</p>
+<h2>Step 1: Modify the remote server's sshd configuration</h2>
+<p>Add the following lines to your sshd config (on my machine it is in
+<code>/etc/ssh/sshd_config</code>:</p>
+<pre><code>AllowTcpForwarding yes
+GatewayPorts yes
+</code></pre>
+<h2>Step 2: Add a user on the remote server for tunnelling</h2>
+<p>Now, it is necessary to add a user on the remote server for the local one to
+connect to, and generate a SSH key for the new user.</p>
+<pre><code># add the user
+useradd -m sshfwd
+
+# generate a ssh key for the user
+su sshfwd
+ssh-keygen
+</code></pre>
+<p>Afterwards, copy the public key in your local machine (it should be in <code>~/.ssh/id_rsa.pub</code>)
+to your remote server and add it to <code>/home/sshfwd/.ssh/authorized_keys</code> (you can just copy
+it to that file since it will not even exist for a new user).</p>
+<h2>Step 3: Open a port for the tunnel</h2>
+<p>I am using <code>ufw</code> as a firewall on my remote server, and I highly recommend it.
+On Debian using <code>ufw</code>, the following should open a port for your ssh tunnel. You
+can pick any unused port.</p>
+<pre><code>ufw allow PORT
+service ufw restart
+</code></pre>
+<h2>Step 4: Create autossh tunnel daemon on the local server</h2>
+<p>This is probably the most involved part. I wrote a one line script called
+<code>sshtund</code>, and put it in <code>/usr/local/bin</code>. <code>autossh</code> is not installed on OpenBSD
+7.2 by default, so it is necessary to install it by running <code>pkg_add autossh</code>.</p>
+<p>Here is the autossh command:</p>
+<pre><code>#!/bin/sh
+autossh -M 0 -o &quot;ExitOnForwardFailure yes&quot; -o &quot;ServerAliveInterval 30&quot; \
+	-o &quot;ServerAliveCountMax 3&quot; -o &quot;TCPKeepAlive yes&quot; -N -v \
+	-R PORT:localhost:22 sshfwd@REMOTE_IP &amp;
+</code></pre>
+<p><code>autossh</code> ensures that the tunnel doesn't go down, as it will attempt to
+reconnect if the connection is lost.</p>
+<h2>Step 5: Create and start the daemon</h2>
+<p>Create a rc file for the tunnel on the local machine at <code>/etc/rc.d/sshtund</code>:</p>
+<pre><code>#!/bin/ksh
+
+daemon=&quot;/usr/local/bin/sshtund&quot;
+
+. /etc/rc.d/rc.subr
+
+pexp=&quot;sshtund: ${daemon}${daemon_flags:+ ${daemon_flags}} \[listener\].*&quot;
+
+rc_configtest() {
+        ${daemon} ${daemon_flags} -t
+}
+
+rc_cmd $1
+</code></pre>
+<p>Then run <code>rcctl start sshtund</code> to start the tunnel. You should now be able to
+connect to your local server anywhere via <code>ssh -p PORT user@REMOTE_IP</code>, using
+the username on your local server.</p>
+</div>
+</body>
+</html>

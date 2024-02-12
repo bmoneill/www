@@ -1,0 +1,54 @@
+body {
+	font: 1.2em sans-serif;
+	background-color: #333;
+	color: #ddd;
+	padding: 1em;
+	max-width: 60rem;
+	margin: auto;
+}
+
+a {
+	text-decoration: none;
+	color: #74A38A;
+}
+
+a:visited {
+	text-decoration: none;
+	color: #74A38A;
+}
+
+#header {
+	text-align: center;
+}
+
+#header ul {
+	margin: 0.1em;
+}
+
+#header li {
+	display: inline;
+}
+
+li {
+	padding: 0.5em;
+}
+
+label {
+	display: inline;
+}
+
+code {
+	font-style: monospace;
+}
+
+pre {
+	width: 100%;
+	padding: 0.4em;
+	background-color: #444;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
