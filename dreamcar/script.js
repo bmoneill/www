@@ -112,7 +112,11 @@ function display(scoreRange, carPrice, results) {
 	};
 
 	data = [trace1, trace2];
-	var layout = {barmode: 'stack'};
+	var layout = {
+		barmode: 'stack',
+        xaxis: {fixedrange: true},
+        yaxis: {fixedrange: true}
+	};
 	var config = {displayModeBar: false};
 	Plotly.newPlot('graph', data, layout, config);
 }
