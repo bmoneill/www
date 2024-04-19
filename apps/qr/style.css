@@ -1,0 +1,43 @@
+body {
+	font: 1.6em sans-serif;
+	background-color: #eee;
+	color: #111;
+	padding: 1em;
+	max-width: 60rem;
+	margin: 0 auto;
+	text-align: center;
+}
+
+h1 {
+	text-align: center;
+}
+
+button {
+}
+
+a {
+	text-decoration: none;
+	color: #74A38A;
+}
+
+a:visited {
+	text-decoration: none;
+	color: #74A38A;
+}
+
+li {
+	padding: 0.5em;
+}
+
+input {
+	margin: 0.5em;
+}
+
+h4 {
+	color: green;
+}
+
+#result {
+	visibility: hidden;
+	color: #198754;
+}
