@@ -1,6 +1,7 @@
 var inputs = document.getElementById("inputs");
 var result = document.getElementById("results");
 var wrapper = document.getElementById("wrapper");
+var carName = "car";
 
 const interestRates = {
 	"Poor": 0.1879,
@@ -45,6 +46,7 @@ function getInputs() {
 }
 
 function calculate() {
+	carName = document.getElementById("car").value;
 	var creditScore = parseInt(document.getElementById("creditScore").value);
 	var carPrice = parseInt(document.getElementById("carPrice").value);
 	var results = {};
@@ -68,57 +70,26 @@ function calculate() {
 }
 
 function display(scoreRange, carPrice, results) {
+
 	if (wrapper.contains(inputs)) inputs.remove();
 	if (!wrapper.contains(result)) wrapper.appendChild(result);
 
 	document.getElementById("scoreRange").innerHTML = scoreRange;
-	document.getElementById("interestRate").innerHTML = results[scoreRange].rate + "%";
-	document.getElementById("monthlyPayment").innerHTML = formatNumber(results[scoreRange].payment);
-	document.getElementById("interest").innerHTML = formatNumber(results[scoreRange].interest);
-	document.getElementById("total").innerHTML = formatNumber(results[scoreRange].total);
+	document.getElementById("carName").innerHTML = carName;
 
-	var interest = [];
-
-	for (var key in results) {
-		interest.push(results[key].interest);
+	for (var score in interestRates) {
+		document.getElementById("rate" + score).innerHTML = results[score].rate + "%";
+		document.getElementById("monthly" + score).innerHTML = formatNumber(results[score].payment);
+		document.getElementById("interest" + score).innerHTML = formatNumber(results[score].interest);
+		document.getElementById("total" + score).innerHTML = formatNumber(results[score].total);
 	}
-	console.log(results.keys);
-	var trace1 = {
-		x: Object.keys(results),
-		y: [carPrice, carPrice, carPrice, carPrice],
-		name: 'Base Price',
-		type: 'bar',
-		marker: {
-			color: '#0d6efd',
-			line: {
-				color: '#0d6efd',
-				width: 1.5
-			}
-		},
-	};
 
-	var trace2 = {
-		x: Object.keys(results),
-		y: interest,
-		name: 'Interest',
-		type: 'bar',
-		marker: {
-			color: '#20c997',
-			line: {
-				color: '#20c997',
-				width: 1.5
-			}
-		},
-	};
-
-	data = [trace1, trace2];
-	var layout = {
-		barmode: 'stack',
-        xaxis: {fixedrange: true},
-        yaxis: {fixedrange: true}
-	};
-	var config = {displayModeBar: false};
-	Plotly.newPlot('graph', data, layout, config);
+	document.getElementById(scoreRange).classList.add("highlighted");
+	document.getElementById("rate" + scoreRange).classList.add("highlighted");
+	document.getElementById("monthly" + scoreRange).classList.add("highlighted");
+	document.getElementById("interest" + scoreRange).classList.add("highlighted");
+	document.getElementById("total" + scoreRange).classList.add("highlighted");
 }
 
 getInputs();
+console.log("Test");

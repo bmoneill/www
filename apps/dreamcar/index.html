@@ -1,54 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Dream Car - The Impact of Credit Scores</title>
-
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<script src="https://cdn.plot.ly/plotly-2.26.0.min.js" charset="utf-8"></script>
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-	<link rel="stylesheet" href="style.css">
-	<base href=".">
-</head>
-<body>
-	<div id="wrapper">
-		<div id="header">
-			<h1>Dream Car - The Impact of Credit Scores</h1>
-		</div>
-		<br>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Dream Car - The Impact of Credit Scores</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
 		<div id="wrapper">
-			<div id="inputs">
-				<label id="creditScoreLabel" for="creditScore">Credit Score:</label>
-				<input type="number" id="creditScore" value="800">
-				<br>
-				<label id="carLabel" for="car">Make and Model of Dream Car:</label>
-				<input type="text" id="car" value="2020 Mercedes Benz">
-				<br>
-				<label id="carPriceLabel" for="carPrice">Price of Dream Car ($):</label>
-				<input type="number" id="carPrice" value="121995">
-				<br><br>
-				<button onclick="calculate()">Calculate</button>
+			<div id="header">
+				<h1>Dream Car - The Impact of Credit Scores</h1>
 			</div>
-			<div id="results">
-				<h2>Your Credit Score is <span class="highlighted" id="scoreRange" /></h2>
-				<p>Based on your credit score, your interest rate is <span class="highlighted" id="interestRate" /></p>
-				<p>This is your monthly payment: <span class="highlighted" id="monthlyPayment" /></p>
-				<p>This is how much you will pay in interest if you only pay your monthly payment: <span class="highlighted" id="interest" /></p>
-				<p>This will be the total cost of the car including interest: <span class="highlighted" id="total" /></p>
-				<div id="graph"></div>
-				<br>
-				<button id="retry" onclick="getInputs()">Try Again</button>
+			<br>
+			<div id="wrapper">
+				<div id="inputs">
+					<label id="creditScoreLabel" for="creditScore">Credit Score:</label>
+					<input type="number" id="creditScore" value="800" />
+					<br>
+					<label id="carLabel" for="car">Make and Model of Dream Car:</label>
+					<input type="text" id="car" value="2020 Mercedes Benz" />
+					<br>
+					<label id="carPriceLabel" for="carPrice">Price of Dream Car ($):</label>
+					<input type="number" id="carPrice" value="121995" />
+					<br><br>
+					<button onclick="calculate()">Calculate</button>
+				</div>
+				<div id="results">
+					<h2>Your Credit Score is <span class="highlighted" id="scoreRange" /></h2>
+					<p>Here's what you'll need to pay to buy a <span id="carName"></span>:</p>
+					<table>
+						<tr>
+							<th>Credit Score</th>
+							<th>Interest rate</th>
+							<th>Monthly Payment</th>
+							<th>Interest</th>
+							<th>Total</th>
+						</tr>
+						<tr>
+							<th><span id="Excellent">Excellent</span></th>
+							<th><span id="rateExcellent"></span></th>
+							<th><span id="monthlyExcellent"></span></th>
+							<th><span id="interestExcellent"></span></th>
+							<th><span id="totalExcellent"></span></th>
+						</tr>
+						<tr>
+							<th><span id="Good">Good</span></th>
+							<th><span id="rateGood"></span></th>
+							<th><span id="monthlyGood"></span></th>
+							<th><span id="interestGood"></span></th>
+							<th><span id="totalGood"></span></th>
+						</tr>
+						<tr>
+							<th><span id="Fair">Fair</span></th>
+							<th><span id="rateFair"></span></th>
+							<th><span id="monthlyFair"></span></th>
+							<th><span id="interestFair"></span></th>
+							<th><span id="totalFair"></span></th>
+						</tr>
+						<tr>
+							<th><span id="Poor">Poor</span></th>
+							<th><span id="ratePoor"></span></th>
+							<th><span id="monthlyPoor"></span></th>
+							<th><span id="interestPoor"></span></th>
+							<th><span id="totalPoor"></span></th>
+						</tr>
+					</table>
+					<br>
+					<button id="retry" onclick="getInputs()">Try Again</button>
+				</div>
 			</div>
 		</div>
-	</div>
-	<br><br>
-	<footer>
-		<p>Copyright © 2024 Kristen Callahan. All rights reserved.</p>
-	</footer>
-	<script src="script.js"></script>
-</body>
+		<br><br>
+		<footer>
+			<p>Copyright © 2024 Kristen Callahan. All rights reserved.</p>
+		</footer>
+		<script src="script.js"></script>
+	</body>
 </html>
