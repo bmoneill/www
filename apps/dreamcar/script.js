@@ -46,7 +46,7 @@ function getInputs() {
 }
 
 function calculate() {
-	carName = document.getElementById("car").value;
+	carName = document.getElementById("car").value.trim();
 	var creditScore = parseInt(document.getElementById("creditScore").value);
 	var carPrice = parseInt(document.getElementById("carPrice").value);
 	var results = {};

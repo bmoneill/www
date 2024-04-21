@@ -47,22 +47,23 @@ h4 {
 footer {
 	bottom: 0;
 }
+
 table {
 	font: 0.55em sans-serif;
 	overflow: auto;
 	table-layout: fixed;
 	width: 28em;
 }
-table, th, td {
-	border: 3px solid;
-	font-weight: normal;
-}
 
 th, td {
+	border: 3px solid;
+	font-weight: normal;
 	padding: 0.5em;
 	padding-top: 1em;
 	padding-bottom: 1em;
 	margin: 0.2em;
+	text-align: center; 
+	vertical-align: middle;
 }
 
 @media (min-width:1200px) { 
