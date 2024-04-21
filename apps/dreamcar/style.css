@@ -50,6 +50,8 @@ footer {
 table {
 	font: 0.55em sans-serif;
 	overflow: auto;
+	table-layout: fixed;
+	width: 30em;
 }
 table, th, td {
 	border: 3px solid;
