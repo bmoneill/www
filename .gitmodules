@@ -1,0 +1,15 @@
+[submodule "apps/qr"]
+	path = apps/qr
+	url = https://github.com/boneill02/qr
+[submodule "apps/bfi"]
+	path = apps/bfi
+	url = https://github.com/boneill02/bfi
+[submodule "apps/ca"]
+	path = apps/ca
+	url = https://github.com/boneill02/ca
+[submodule "apps/investcalc"]
+	path = apps/investcalc
+	url = https://github.com/boneill02/investcalc
+[submodule "articles"]
+	path = articles
+	url = https://github.com/boneill02/articles
