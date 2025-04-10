@@ -1,9 +1,6 @@
 [submodule "apps/qr"]
 	path = apps/qr
 	url = https://github.com/boneill02/qr
-[submodule "apps/bfi"]
-	path = apps/bfi
-	url = https://github.com/boneill02/bfi
 [submodule "apps/ca"]
 	path = apps/ca
 	url = https://github.com/boneill02/ca
@@ -13,3 +10,6 @@
 [submodule "articles"]
 	path = articles
 	url = https://github.com/boneill02/articles
+[submodule "apps/bfi-js"]
+	path = apps/bfi-js
+	url = https://github.com/boneill02/bfi-js
