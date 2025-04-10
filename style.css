@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
 :root {
 	--background-color: #FFF;
 	--body-color: #000;
@@ -127,6 +130,17 @@ li {
 	display: block;
 	float: right;
 	margin-left: 1em;
+}
+
+.monotext {
+  font-family: "Source Code Pro", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.mbta-wrapper h2 {
+	font-weight: bold;
+	margin-top: 3em;
 }
 
 @media (min-width: 1000px) {
