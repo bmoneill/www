@@ -13,3 +13,6 @@
 [submodule "apps/bfi-js"]
 	path = apps/bfi-js
 	url = https://github.com/boneill02/bfi-js
+[submodule "apps/zimmermanntel"]
+	path = apps/zimmermanntel
+	url = https://github.com/boneill02/zimmermanntel
