@@ -189,4 +189,8 @@ li {
 	.wrapper {
 		max-width: 95%;
 	}
+
+	textarea {
+		width: 100%;
+	}
 }
