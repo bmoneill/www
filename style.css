@@ -36,6 +36,10 @@ li {
 	margin-bottom: 0em;
 }
 
+textarea {
+	width: 100%;
+}
+
 .wrapper {
 	margin-top: 8em;
 	margin: 0 auto;
@@ -188,9 +192,5 @@ li {
 	}
 	.wrapper {
 		max-width: 95%;
-	}
-
-	textarea {
-		width: 100%;
 	}
 }
