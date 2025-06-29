@@ -1,0 +1,29 @@
+baseURL = 'https://oneill.sh/'
+languageCode = 'en-us'
+title = "Ben O'Neill"
+
+theme = 'hugo-xterm'
+
+[pagination]
+  pagerSize = 20
+
+[params]
+  centerTheme = true
+  showMenuItems = true
+  toc = true
+  copyrightUserUrl = "ben@oneill.sh"
+
+[languages]
+  [languages.en.params]
+    copyright = "© Ben O'Neill"
+    missingContentMessage = "Page not found."
+    missingBackButtonLabel = "Back to home page"
+
+    [languages.en.params.logo]
+      logoText = "Home"
+
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        identifier = "apps"
+        name = "Apps"
+        url = "/apps/"

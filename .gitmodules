@@ -1,18 +1,21 @@
 [submodule "apps/qr"]
-	path = apps/qr
+	path = static/apps/qr
 	url = https://github.com/boneill02/qr
 [submodule "apps/ca"]
-	path = apps/ca
+	path = static/apps/ca
 	url = https://github.com/boneill02/ca
 [submodule "apps/investcalc"]
-	path = apps/investcalc
+	path = static/apps/investcalc
 	url = https://github.com/boneill02/investcalc
 [submodule "articles"]
 	path = articles
 	url = https://github.com/boneill02/articles
 [submodule "apps/bfi-js"]
-	path = apps/bfi-js
+	path = static/apps/bf
 	url = https://github.com/boneill02/bfi-js
 [submodule "apps/zimmermanntel"]
-	path = apps/zimmermanntel
+	path = static/apps/adfgvx
 	url = https://github.com/boneill02/zimmermanntel
+[submodule "themes/hugo-xterm"]
+	path = themes/hugo-xterm
+	url = https://github.com/manid2/hugo-xterm
