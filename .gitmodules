@@ -13,9 +13,6 @@
 [submodule "apps/bfi-js"]
 	path = static/apps/bf
 	url = https://github.com/boneill02/bfi-js
-[submodule "apps/zimmermanntel"]
-	path = static/apps/adfgvx
-	url = https://github.com/boneill02/adfgvx
 [submodule "themes/hugo-xterm"]
 	path = themes/hugo-xterm
 	url = https://github.com/manid2/hugo-xterm
