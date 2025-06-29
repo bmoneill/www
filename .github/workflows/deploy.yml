@@ -1,10 +1,11 @@
 name: Deploy
 
-# Controls when the action will run.
 on:
   # Triggers the workflow on push to master or hugo branch
   push:
     branches: [ master hugo ]
+
+  workflow_dispatch:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
