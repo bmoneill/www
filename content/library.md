@@ -1,5 +1,6 @@
 ---
-title: "Books of Interest"
+title: "Library"
+description: "Books of interest"
 ---
 
 ## Computing

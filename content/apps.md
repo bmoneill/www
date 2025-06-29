@@ -1,5 +1,6 @@
 ---
-title: "Webapps Hosted Here"
+title: "Apps"
+title: "Web applications hosted here."
 ---
 
 ## Investment Calculators

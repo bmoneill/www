@@ -1,5 +1,6 @@
 ---
 title: "Links"
+description: "Personal and external links"
 ---
 
 ## Personal
