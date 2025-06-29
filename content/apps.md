@@ -4,7 +4,7 @@ title: "Webapps Hosted Here"
 
 ## Cryptography
 
-* [ADFGVX Cipher Decoder/Encoder]("adfgvx/")
+* [ADFGVX Cipher Decoder/Encoder](adfgvx/)
 
 ## Investment Calculators
 
