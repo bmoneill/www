@@ -10,6 +10,8 @@ I specialize in backend development and systems administration for Unix-like sys
 
 ## Featured Projects
 
+See [Apps](apps) for projects hosted here.
+
 * **[libc8](https://github.com/boneill02/libc8)**: A full-featured library for assembling, disassembling, and interpreting CHIP-8 and SCHIP code.
 * **[mbta2rss](https://github.com/boneill02/mbta2rss)**: An unofficial program that converts alert feeds for public transit in Greater Boston to RSS/HTML.
 * **[md2roff](https://github.com/boneill02/md2roff)**: A markdown to roff (ms or manpage) compiler.

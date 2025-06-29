@@ -9,7 +9,7 @@ title: "Webapps Hosted Here"
 ## Investment Calculators
 
 * [Dream Car Cost Calculator](investcalc/dreamcar)
-* [Investment Risk/Reward Calculator](investcalc/riskreturn)
+* [Investment Risk/Reward Calculator](investcalc/riskreward)
 * [Retirement Investment Calculator](investcalc/retirement/)
 * [Unnecessary Spending Investment Calculator](investcalc/habits)
 
