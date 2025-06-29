@@ -6,9 +6,6 @@ on:
   push:
     branches: [ master hugo ]
 
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
-
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
@@ -30,4 +27,4 @@ jobs:
           cd src
           git stash
           git pull --force origin master
-          hugo -s . -t /var/www/hugo -d ~/src --cacheDir ~/hugocache
+          hugo -s . ~/src --cacheDir ~/hugocache
