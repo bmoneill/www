@@ -2,10 +2,6 @@
 title: "Webapps Hosted Here"
 ---
 
-## Cryptography
-
-* [ADFGVX Cipher Decoder/Encoder](adfgvx/)
-
 ## Investment Calculators
 
 * [Dream Car Cost Calculator](investcalc/dreamcar)
