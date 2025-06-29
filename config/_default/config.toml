@@ -10,7 +10,6 @@ theme = 'hugo-xterm'
 [params]
   centerTheme = true
   showMenuItems = true
-  toc = true
   copyrightUserUrl = "ben@oneill.sh"
 
 [languages]
