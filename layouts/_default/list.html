@@ -1,0 +1,23 @@
+{{- define "main" }}
+  <article class="post">
+    <header class="post-header">
+      {{- if .Title }}
+        <h1>{{ .Title | plainify }}</h1>
+      {{- end }}
+
+      {{- with .Params.Description -}}
+        <p>{{ . }}</p>
+      {{- end -}}
+    </header>
+
+    <div class="post-content">
+      {{- with .Content }}
+        {{ . }}
+      {{- end }}
+    </div>
+
+    <footer class="post-footer">
+      {{- partial "pagination.html" . -}}
+    </footer>
+  </article>
+{{- end }}
