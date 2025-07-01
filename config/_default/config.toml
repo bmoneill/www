@@ -26,3 +26,11 @@ theme = 'hugo-xterm'
         identifier = "apps"
         name = "Apps"
         url = "/apps/"
+      [[languages.en.menu.main]]
+        identifier = "bookmarks"
+        name = "Bookmarks"
+        url = "/bookmarks"
+      [[languages.en.menu.main]]
+        identifier = "library"
+        name = "Library"
+        url = "/library"
