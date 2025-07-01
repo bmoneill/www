@@ -1,5 +1,5 @@
 ---
-title: "Links"
+title: "Bookmarks"
 description: "Personal and external links"
 ---
 
@@ -23,11 +23,11 @@ description: "Personal and external links"
 * [Plan 9 From Bell Labs](https://9p.io/plan9/): UNIX's successor.
 * [RFC Index](https://tools.ietf.org/rfc/index): Documentation for most internet standards.
 * [pimutils](https://pimutils.org/): A small collection of CLI utilities for managing calendars, tasks, and synchronizing data.
-* [SMAP](http://www.courier-mta.org/cone/smap1.html): A document describing a simpler alternative to IMAP.</li>
-* [OSDev Wiki](https://wiki.osdev.org/Main_Page): Extensive information about creating operating systems.</li>
-* [TLDRLegal](https://tldrlegal.com): Provides readable summaries of software licenses.</li>
-* [wiby](https://wiby.me/): A search engine for the classic web.</li>
-* [XDG Base Directory Support list](https://wiki.archlinux.org/title/XDG_Base_Directory#Support): A list of software that supports the FreeDesktop XDG Base Directory Specification and how to modify others in order to meet the specification.</li>
+* [SMAP](http://www.courier-mta.org/cone/smap1.html): A document describing a simpler alternative to IMAP.
+* [OSDev Wiki](https://wiki.osdev.org/Main_Page): Extensive information about creating operating systems.
+* [TLDRLegal](https://tldrlegal.com): Provides readable summaries of software licenses.
+* [wiby](https://wiby.me/): A search engine for the classic web.
+* [XDG Base Directory Support list](https://wiki.archlinux.org/title/XDG_Base_Directory#Support): A list of software that supports the FreeDesktop XDG Base Directory Specification and how to modify others in order to meet the specification.
 
 ## Other
 
