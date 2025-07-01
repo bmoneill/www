@@ -5,9 +5,11 @@
         <h1>{{ .Title | plainify }}</h1>
       {{- end }}
 
-      {{- with .Params.Description -}}
-        <p>{{ . }}</p>
-      {{- end -}}
+      {{- if not .IsHome }}
+        {{- with .Params.Description -}}
+          <p class="post-description">{{ . }}</p>
+        {{- end -}}
+      {{- end }}
     </header>
 
     <div class="post-content">
