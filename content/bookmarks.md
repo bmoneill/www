@@ -1,6 +1,6 @@
 ---
 title: "Bookmarks"
-description: "Personal and external links"
+description: "Personal and external links."
 ---
 
 ## Personal
