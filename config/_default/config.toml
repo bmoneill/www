@@ -1,7 +1,7 @@
 baseURL = 'https://oneill.sh/'
 languageCode = 'en-us'
 title = "Ben O'Neill"
-
+enableRobotsTXT = true
 theme = 'hugo-xterm'
 
 [pagination]
