@@ -1,9 +1,9 @@
 name: Deploy
 
 on:
-  # Triggers the workflow on push to master or hugo branch
+  # Triggers the workflow on push to main or hugo branch
   push:
-    branches: [ master hugo ]
+    branches: [ main hugo ]
 
   workflow_dispatch:
 
