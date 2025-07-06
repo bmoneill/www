@@ -1,4 +1,4 @@
-module github.com/boneill02/www
+module github.com/bmoneill/www
 
 go 1.24.4
 
