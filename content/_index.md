@@ -11,7 +11,7 @@ I specialize in backend development and systems administration for Unix-like sys
 
 See [Apps](apps) for projects hosted here.
 
-* **[enigma](https://github.com/bmoneill/enigma)**: Enigma machine and Bombe decryption device simulators.
+* **[enigma](https://github.com/bmoneill/enigma)**: Enigma machine and Bombe simulators.
 * **[habit](https://github.com/bmoneill/habit)**: A tool to help break bad habits when using the terminal.
 * **[libc8](https://github.com/bmoneill/libc8)**: A full-featured library for assembling, disassembling, and interpreting CHIP-8 and SCHIP code.
 * **[mbta2rss](https://github.com/bmoneill/mbta2rss)**: An unofficial program that converts alert feeds for public transit in Greater Boston to RSS/HTML.
