@@ -11,14 +11,14 @@ I specialize in backend development and systems administration for Unix-like sys
 
 See [Apps](apps) for projects hosted here.
 
-* **[arena](https://github.com/bmoneill/arena)**: An Arena allocator
+* **[arena](https://github.com/bmoneill/arena)**: An Arena memory allocator
 * **[enigma](https://github.com/bmoneill/enigma)**: A library for simulating and cracking the Enigma machine.
 * **[habit](https://github.com/bmoneill/habit)**: A tool to help break bad habits when using the terminal.
 * **[libc8](https://github.com/bmoneill/libc8)**: A library and toolset for assembling, disassembling, and interpreting CHIP-8 and SCHIP code.
 * **[mbta2rss](https://github.com/bmoneill/mbta2rss)**: An unofficial program that converts alert feeds and schedules for public transit in Greater Boston to RSS/HTML.
 * **[md2roff](https://github.com/bmoneill/md2roff)**: A markdown to roff (ms or manpage) compiler.
 * **[pygame-mp](https://github.com/pygame-mp/pygame-mp)**: A framework for multiplayer game development based on Pygame.
-* **[raycast](https://github.com/bmoneill/raycast)**: A Wolfenstein-3D style raycasting library.
+* **[raycaster](https://github.com/bmoneill/raycaster)**: A Wolfenstein-3D style raycasting library.
 * **[recipes](https://github.com/bmoneill/recipes)**: A site that gives you recipe ideas based on the ingredients you currently have.
 * **[scarlet](https://github.com/bmoneill/scarlet)**: A toolchain for building Linux+Busybox recovery OSes small enough to fit in a BIOS chip.
 * **[sreader](https://github.com/bmoneill/sreader)**: A TUI RSS/Atom feed reader.
