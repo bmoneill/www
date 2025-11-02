@@ -1,6 +1,8 @@
 ---
 title: "Hello, I'm Ben."
 description: "A backend-focused software developer based in the Boston area."
+date: 2025-11-01T22:07:08-04:00
+draft: false
 ---
 
 I am a software developer based in the Boston area. Here you can find a portfolio of my projects as well as other miscellaneous items.

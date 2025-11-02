@@ -1,6 +1,8 @@
 ---
 title: "Apps"
 description: "Web applications hosted here."
+date: 2025-11-01T22:07:08-04:00
+draft: false
 ---
 
 ## Investment Calculators

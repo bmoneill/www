@@ -1,6 +1,8 @@
 ---
 title: "Bookmarks"
 description: "Personal and external links."
+date: 2025-11-01T22:07:08-04:00
+draft: false
 ---
 
 ## Personal
