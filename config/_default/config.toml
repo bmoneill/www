@@ -1,36 +1,32 @@
+title = "Ben O'Neill"
 baseURL = 'https://oneill.sh/'
 languageCode = 'en-us'
-title = "Ben O'Neill"
+theme = 'not-much'
+copyright = "© {year} Ben O'Neill. All rights reserved."
 enableRobotsTXT = true
-theme = 'hugo-xterm'
+
+
 
 [pagination]
   pagerSize = 20
 
-[params]
   centerTheme = true
   showMenuItems = true
-  copyrightUserUrl = "ben@oneill.sh"
 
-[languages]
-  [languages.en.params]
-    copyright = "© Ben O'Neill"
-    missingContentMessage = "Page not found."
-    missingBackButtonLabel = "Back to home page"
+[languages.en.params]
+  showPostsSummary = false
+  palette = "eink"
 
-    [languages.en.params.logo]
-      logoText = "Home"
-
-    [languages.en.menu]
-      [[languages.en.menu.main]]
-        identifier = "apps"
-        name = "Apps"
-        url = "/apps/"
-      [[languages.en.menu.main]]
-        identifier = "bookmarks"
-        name = "Bookmarks"
-        url = "/bookmarks"
-      [[languages.en.menu.main]]
-        identifier = "library"
-        name = "Library"
-        url = "/library"
+  [languages.en.menu]
+    [[languages.en.menu.main]]
+      identifier = "apps"
+      name = "Apps"
+      url = "/apps/"
+    [[languages.en.menu.main]]
+      identifier = "bookmarks"
+      name = "Bookmarks"
+      url = "/bookmarks"
+    [[languages.en.menu.main]]
+      identifier = "library"
+      name = "Library"
+      url = "/library"

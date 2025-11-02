@@ -13,6 +13,6 @@
 [submodule "apps/bfi-js"]
 	path = static/apps/bf
 	url = https://github.com/bmoneill/bfi-js
-[submodule "themes/hugo-xterm"]
-	path = themes/hugo-xterm
-	url = https://github.com/manid2/hugo-xterm
+[submodule "themes/not-much"]
+	path = themes/not-much
+	url = https://github.com/imgios/not-much.git
