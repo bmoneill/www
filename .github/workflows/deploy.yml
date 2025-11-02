@@ -1,32 +1,27 @@
 name: Deploy
 
 on:
-  # Triggers the workflow on push to main or hugo branch
   push:
-    branches: [ main hugo ]
+    branches: [main hugo]
 
   workflow_dispatch:
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
   update:
-    # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    - name: Updating website.
-      uses: appleboy/ssh-action@master
-      with:
-        host: oneill.sh
-        username: www
-        key: ${{ secrets.wwwssh }}
-        passphrase: ${{ secrets.wwwpass }}
-        port: 22
-        script: |
-          cd src
-          git stash
-          git pull --force origin main
-          git submodule update
-          hugo -s . -d /var/www/hugo/ --cacheDir ~/hugocache
+      - name: Updating website.
+        uses: appleboy/ssh-action@master
+        with:
+          host: oneill.sh
+          username: www
+          key: ${{ secrets.wwwssh }}
+          passphrase: ${{ secrets.wwwpass }}
+          port: 22
+          script: |
+            cd src
+            git stash
+            git pull --force origin main
+            git submodule update
+            hugo -s . -d /var/www/hugo/ --cacheDir ~/hugocache
