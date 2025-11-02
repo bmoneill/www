@@ -14,4 +14,5 @@ description: "Web applications hosted here."
 
 * [Brainfuck Interpreter](bf/)
 * [Cellular Automata Simulator](ca/)
+* [Enigma Machine Simulator](enigma/)
 * [QR Code Generator](qr/)
