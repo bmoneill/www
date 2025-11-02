@@ -2,7 +2,7 @@ title = "Ben O'Neill"
 baseURL = 'https://oneill.sh/'
 languageCode = 'en-us'
 theme = 'not-much'
-copyright = "© {year} Ben O'Neill. All rights reserved."
+copyright = "© {year} Ben O'Neill <ben@oneill.sh>. All rights reserved."
 enableRobotsTXT = true
 
 
