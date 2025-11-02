@@ -23,5 +23,6 @@ jobs:
             cd src
             git stash
             git pull --force origin main
+            git submodule init
             git submodule update
             hugo -s . -d /var/www/hugo/ --cacheDir ~/hugocache
