@@ -10,6 +10,9 @@ draft: false
 * [My GitHub page](https://github.com/bmoneill)
 * [My LeetCode page](https://leetcode.com/boneill02)
 * [My Letterboxd page](https://letterboxd.com/d4rklands)
+* [My LinkedIn page](https://www.linkedin.com/in/benmoneill)
+* [My Duolingo page](https://www.duolingo.com/profile/oneill.sh)
+* [My stats.fm page](https://stats.fm/profile/oneill.sh)
 * [Youtube Film Playlist](https://www.youtube.com/playlist?list=PLo1zwie6sgvsxE8qnMMqSW-3cgvMso_8D)
 * [Youtube History Playlist](https://www.youtube.com/playlist?list=PLo1zwie6sgvsxoqTysx2426TTdqpTr1gB)
 
