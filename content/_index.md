@@ -19,7 +19,7 @@ See [Apps](apps) for projects hosted here.
 * **[mbta2rss](https://github.com/bmoneill/mbta2rss)**: An unofficial program that converts alert feeds and schedules for public transit in Greater Boston to RSS/HTML.
 * **[md2roff](https://github.com/bmoneill/md2roff)**: A markdown to roff (ms or manpage) compiler.
 * **[pygame-mp](https://github.com/pygame-mp/pygame-mp)**: A framework for multiplayer game development based on Pygame.
-* **[raycaster](https://github.com/bmoneill/raycaster)**: A Wolfenstein-3D style raycasting library.
+* **[raycast](https://github.com/bmoneill/raycast)**: A Wolfenstein-3D style raycasting library.
 * **[recipes](https://github.com/bmoneill/recipes)**: A site that gives you recipe ideas based on the ingredients you currently have.
 * **[scarlet](https://github.com/bmoneill/scarlet)**: A toolchain for building Linux+Busybox recovery OSes small enough to fit in a BIOS chip.
 * **[sreader](https://github.com/bmoneill/sreader)**: A TUI RSS/Atom feed reader.
