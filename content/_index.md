@@ -9,7 +9,7 @@ I am a software developer based in the Boston area. Here you can find a portfoli
 of my projects as well as other miscellaneous items.
 
 I specialize in backend development and systems administration for Unix-like
-systems, using C, Python, Go, and Bash. I also have some small game developmen
+systems, using C, Python, Go, and Bash. I also have some small game development
 and web development projects under my belt.
 
 ## Featured Projects
