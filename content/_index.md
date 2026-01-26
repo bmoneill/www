@@ -17,6 +17,10 @@ and web development projects under my belt.
 See [Apps](apps) for projects hosted here.
 
 * **[arena](https://github.com/bmoneill/arena)**: An Arena memory allocator
+* **[bfx](https://github.com/bmoneill/bfx)**: A brainfuck interpreter, compiler,
+  and REPL.
+* **[dwmtemplate](https://github.com/bmoneill/dwmtemplate)**: A macro system
+  for Linux window managers.
 * **[enigma](https://github.com/bmoneill/enigma)**: A library for simulating and
   cracking the Enigma machine ([Web demo](https://oneill.sh/apps/enigma)).
 * **[libc8](https://github.com/bmoneill/libc8)**: A library and toolset for
@@ -37,5 +41,8 @@ See [Apps](apps) for projects hosted here.
 * **[sreader](https://github.com/bmoneill/sreader)**: A TUI RSS/Atom feed reader.
 * **[swerve](https://github.com/bmoneill/swerve)**: An i386 kernel and C
   standard library.
+* **[teal](https://github.com/bmoneill/teal)/[tbs](https://github.com/bmoneill/tbs)**:
+  Static site and blog generators in POSIX sh.
+* **[typetest](https://github.com/bmoneill/typetest)**: A typing speed tester.
 * **[zandra](https://github.com/zandralinux/zandra)**: A source-based Linux
   distribution tailored for legacy hardware and containerized systems.
