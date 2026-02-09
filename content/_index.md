@@ -17,8 +17,8 @@ and web development projects under my belt.
 See [Apps](apps) for projects hosted here.
 
 * **[arena](https://github.com/bmoneill/arena)**: An Arena memory allocator
-* **[bfx](https://github.com/bmoneill/bfx)**: A brainfuck interpreter, compiler,
-  and REPL.
+* **[bfx](https://github.com/bmoneill/bfx)**: An interpreter, compiler,
+  and REPL for brainfuck and some of its derivatives.
 * **[dwmtemplate](https://github.com/bmoneill/dwmtemplate)**: A macro system
   for Linux window managers.
 * **[enigma](https://github.com/bmoneill/enigma)**: A library for simulating and
