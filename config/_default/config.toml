@@ -5,28 +5,25 @@ theme = 'not-much'
 copyright = "© {year} Ben O'Neill <ben@oneill.sh>. All rights reserved."
 enableRobotsTXT = true
 
-
-
 [pagination]
   pagerSize = 20
-
   centerTheme = true
   showMenuItems = true
 
-[languages.en.params]
+[params]
   showPostsSummary = false
   palette = "eink"
 
-  [languages.en.menu]
-    [[languages.en.menu.main]]
-      identifier = "apps"
-      name = "Apps"
-      url = "/apps/"
-    [[languages.en.menu.main]]
-      identifier = "bookmarks"
-      name = "Bookmarks"
-      url = "/bookmarks"
-    [[languages.en.menu.main]]
-      identifier = "library"
-      name = "Library"
-      url = "/library"
+[menu]
+  [[menu.main]]
+    identifier = "apps"
+    name = "Apps"
+    url = "/apps"
+  [[menu.main]]
+    identifier = "bookmarks"
+    name = "Bookmarks"
+    url = "/bookmarks"
+  [[menu.main]]
+    identifier = "library"
+    name = "Library"
+    url = "/library"
