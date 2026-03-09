@@ -7,8 +7,8 @@ draft: false
 
 Using the shell effectively in a Unix-like environment must show a
 certain flow, which is comparable to poetry. According to former AT&T
-Bell Labs employee Brian Kernighan in his book _Unix: A History and a
-Memoir_, many of the hackers who developed and utilized Research Unix
+Bell Labs employee Brian Kernighan in his book [Unix: A History and a Memoir](https://www.amazon.com/dp/1695978552),
+many of the hackers who developed and utilized Research Unix
 at Bell Labs in the early days were extremely fond of literature. Of
 course, the arts and sciences are typically viewed as polar opposites,
 but it is no where more prevalent than in computing that those who
