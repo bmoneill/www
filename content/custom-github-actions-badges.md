@@ -14,9 +14,9 @@ for a web server.
 
 ## Getting Started
 
-First of all, you must have an existing workflow which produces the data you
-want to display in your badge. For this example, let's assume you are using
-GitHub Actions to generate code coverage reports for tests in a C project,
+You must have an existing workflow which produces the data you
+want to display in your badge. In this tutorial, I will assume that you
+are using GitHub Actions to generate code coverage reports for tests in a C project,
 and you have a web server using Nginx. See [this example workflow](https://github.com/bmoneill/libc8/blob/main/.github/workflows/cmake-single-platform.yml)
 for reference.
 
@@ -84,7 +84,7 @@ include includes/PROJECTNAME.conf;
 
 After you reload your Nginx configuration, the badge should be visible at
 `https://yourdomain.com/badge/PROJECTNAME`. Now, we have to write a script that
-updates the badge percentage:
+updates the badge percentage automaticall:
 
 ```bash
 #!/bin/bash
@@ -134,5 +134,5 @@ Finally, update your README.md file to include the badge:
 ```
 
 Now, you should be all set! When you push a new commit to your repository's
-`main` branch, your workflow executed successfuly, the badge percentage should
-update automatically.
+`main` branch, assuming that your workflow executed successfuly, the badge
+percentage should update automatically.
