@@ -22,6 +22,10 @@ noClasses = true
 style = "monokai"
 tabWidth = 4
 
+pygmentsCodefences = true
+pygmentsCodefencesGuessSyntax = true
+pygmentsStyle = "monokai"
+
 [params]
 description = "A backend-focused developer in the Boston area."
 
