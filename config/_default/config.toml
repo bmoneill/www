@@ -25,6 +25,7 @@ tabWidth = 4
 pygmentsCodefences = true
 pygmentsCodefencesGuessSyntax = true
 pygmentsStyle = "monokai"
+pygmentsUseClasses = true
 
 [params]
 description = "A backend-focused developer in the Boston area."
