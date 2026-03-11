@@ -1,7 +1,6 @@
 ---
 title: "Library"
 description: "Books of interest."
-date: 2020-11-01T22:07:08-04:00
 draft: false
 ---
 

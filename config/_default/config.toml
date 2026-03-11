@@ -1,18 +1,29 @@
+baseurl = "https://oneill.sh"
+enableEmoji = false
+googleAnalytics = ""
+ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
+languageCode = "en-us"
+theme = "hugo-classic"
 title = "Ben O'Neill"
-baseURL = 'https://oneill.sh/'
-languageCode = 'en-us'
-theme = 'not-much'
-copyright = "© {year} Ben O'Neill <ben@oneill.sh>. All rights reserved."
-enableRobotsTXT = true
 
-[pagination]
-  pagerSize = 20
-  centerTheme = true
-  showMenuItems = true
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup.highlight]
+anchorLineNos = false
+codeFences = true
+guessSyntax = false
+hl_Lines = ""
+lineAnchors = ""
+lineNoStart = 1
+lineNos = false
+lineNumbersInTable = true
+noClasses = true
+style = "monokai"
+tabWidth = 4
 
 [params]
-  showPostsSummary = false
-  palette = "dracula"
+description = "A backend-focused developer in the Boston area."
 
 [menu]
   [[menu.main]]

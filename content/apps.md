@@ -1,7 +1,6 @@
 ---
 title: "Apps"
 description: "Web applications hosted here."
-date: 2020-01-01T22:07:08-04:00
 draft: false
 ---
 
