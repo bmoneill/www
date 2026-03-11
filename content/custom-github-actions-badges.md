@@ -113,7 +113,7 @@ nginx -t # Make sure configuration is valid before reloading
 # Purge cached badge from GitHub
 # See https://dev.to/jcubic/github-action-to-clear-cache-on-images-in-readme-5g1n
 curl -s https://github.com/YOURUSERNAME/$1/blob/main/README.md > tmp.md
-grep -Eo '<img src=\\"[^"]+\\"' tmp.md | grep camo | grep -Eo 'https[^"\\]+' | xargs -I {} curl -w "\n" -s -X PURGE {}
+grep -Eo '<img[^>]*src="[^"]+"' tmp.md | sed -E 's/.* src="([^"]+)".*/\1/' | grep camo | xargs -I {} curl -w "\n" -s -X PURGE {}
 rm tmp.md
 ```
 
