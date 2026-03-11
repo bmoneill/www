@@ -5,13 +5,6 @@ theme = 'not-much'
 copyright = "© {year} Ben O'Neill <ben@oneill.sh>. All rights reserved."
 enableRobotsTXT = true
 
-[markup]
-  [markup.highlight]
-    style = 'dracula'
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
-
 [pagination]
   pagerSize = 20
   centerTheme = true
@@ -19,7 +12,7 @@ enableRobotsTXT = true
 
 [params]
   showPostsSummary = false
-  palette = "eink"
+  palette = "dracula"
 
 [menu]
   [[menu.main]]
