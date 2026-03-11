@@ -84,7 +84,7 @@ include includes/PROJECTNAME.conf;
 
 After you reload your Nginx configuration, the badge should be visible at
 `https://yourdomain.com/badge/PROJECTNAME`. Now, we have to write a script that
-updates the badge percentage automaticall:
+updates the badge percentage automatically:
 
 ```bash
 #!/bin/bash
