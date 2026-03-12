@@ -12,13 +12,16 @@ also possible to create custom badges which show more detailed information, such
 as code coverage percentages. The method I used to employ this only requires paying
 for a web server.
 
-## Getting Started
+This tutorial assumes the following:
 
-You must have an existing workflow which produces the data you
-want to display in your badge. In this tutorial, I will assume that you
-are using GitHub Actions to generate code coverage reports for tests in a C project,
-and you have a web server using Nginx. See [this example workflow](https://github.com/bmoneill/libc8/blob/main/.github/workflows/cmake-single-platform.yml)
-for reference.
+- You have a GitHub repository with an existing CI workflow that produces code
+  coverage percentages (See [this example workflow](https://github.com/bmoneill/libc8/blob/main/.github/workflows/cmake-single-platform.yml)
+  for reference)
+- You have a web server using Nginx
+
+If you are aiming to create a custom badge for a different purpose, or if you
+want to use a different web server, you may need to adapt the steps below, but
+the general approach should still apply.
 
 ## Building the Workflow
 
@@ -101,8 +104,17 @@ if ! [[ "$2" =~ ^[0-9]+$ ]]; then
     exit 1
 fi
 
+# Determine badge color based on percentage
+color="green"
+if [[ $2 -lt 80 ]]; then
+    color="orange"
+fi
+if [[ $2 -lt 60 ]]; then
+    color="red"
+fi
+
 # Update badge percentage in Nginx config
-sed "s/coverage-../coverage-$2/" /etc/nginx/includes/$1.conf > tmp.conf
+sed "s/coverage-.*/coverage-$2%25-$color;/" /etc/nginx/includes/$1.conf > tmp.conf
 mv -f tmp.conf /etc/nginx/includes/$1.conf
 
 # Reload Nginx
