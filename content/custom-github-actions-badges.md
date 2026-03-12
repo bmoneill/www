@@ -134,5 +134,5 @@ Finally, update your README.md file to include the badge:
 ```
 
 Now, you should be all set! When you push a new commit to your repository's
-`main` branch, assuming that your workflow executed successfuly, the badge
+`main` branch, assuming that your workflow executed successfully, the badge
 percentage should update automatically.
