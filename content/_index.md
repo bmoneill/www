@@ -29,21 +29,43 @@ See [Apps](apps) for more projects hosted here, and my
 [GitHub page](https://github.com/bmoneill) for small, older, or unfinished
 projects not listed here.
 
-| Category      | Name         | Description                                                                                   | Languages/Tools           | Links                                                                                          |
-| ------------- | ------------ | --------------------------------------------------------------------------------------------- | ------------------------- | ---------------------------------------------------------------------------------------------- |
-| Systems       | arena        | An Arena memory allocator                                                                     | C                         | [Source](https://github.com/bmoneill/arena)                                                    |
-| Compilers     | bfx          | An interpreter, compiler, and REPL for brainfuck and some of its derivatives.                 | C                         | [Source](https://github.com/bmoneill/bfx)                                                      |
-| Systems       | dwmtemplate  | A macro system for Linux window managers.                                                     | Shell                     | [Source](https://Source.com/bmoneill/dwmtemplate)                                              |
-| Web Apps, CLI | enigma       | A toolset for simulating and cracking the Enigma machine.                                     | C, Emscripten             | [Source](https://github.com/bmoneill/enigma), [Demo](apps/enigma)                              |
-| Web Apps      | InvestCalc   | Investment calculators for financial literacy education                                       | Bootstrap, Chart.js       | [Source](https://github.com/bmoneill/investcalc), [Demo](apps)                                 |
-| Compilers     | libc8        | A CHIP-8 and SCHIP assembler, disassembler, and interpreter.                                  | C, SDL2, ncurses          | [Source](https://github.com/bmoneill/libc8)                                                    |
-| Compilers     | md2roff      | A Markdown to roff (ms or manpage) compiler.                                                  | C                         | [Source](https://github.com/bmoneill/md2roff)                                                  |
-| Web Apps      | OverAchiever | A website providing Xbox and Steam achievement guides and statistics for game completionists. | Python, Flask, SQLalchemy | [Source](https://github.com/bmoneill/overachiever), [overachiever.io](https://overachiever.io) |
-| Game Dev      | pygame-mp    | A multiplayer game development framework based on Pygame.                                     | Python, Pygame            | [Source](https://github.com/pygame-mp/pygame-mp)                                               |
-| Game Dev      | raycast      | A Wolfenstein-3D style raycasting library                                                     | C, SDL3                   | [Source](https://github.com/bmoneill/raycast)                                                  |
-| Systems       | scarlet      | A toolchain for building Linux+Busybox recovery OSes.                                         | Shell                     | [Source](https://github.com/bmoneill/scarlet)                                                  |
-| CLI Apps      | sreader      | A TUI RSS/Atom feed reader.                                                                   | Go                        | [Source](https://github.com/bmoneill/sreader)                                                  |
-| Systems       | swerve       | An i386 kernel and C standard library.                                                        | C, x86 Assembly           | [Source](https://github.com/bmoneill/swerve)                                                   |
-| Web Apps      | teal/tbs     | Static site and blog generators in POSIX sh.                                                  | Shell                     | [teal source](https://github.com/bmoneill/teal), [tbs source](https://github.com/bmoneill/tbs) |
-| CLI Apps      | typetest     | A typing speed tester.                                                                        | C                         | [Source](https://github.com/bmoneill/typetest)                                                 |
-| Systems       | zandra       | A source-based Linux distribution.                                                            | Shell, mk                 | [Source](https://github.com/zandralinux/zandra)                                                |
+- **[arena](https://github.com/bmoneill/arena)**: An Arena memory allocator.
+- **[bfx](https://github.com/bmoneill/bfx)**: An interpreter, compiler,
+  and REPL for brainfuck and some of its derivatives.
+- **[dwmtemplate](https://github.com/bmoneill/dwmtemplate)**: A macro system
+  for Linux window managers.
+- **[enigma](https://github.com/bmoneill/enigma)**: A library for simulating and
+  cracking the Enigma machine ([Web demo](https://oneill.sh/apps/enigma)).
+- **[libc8](https://github.com/bmoneill/libc8)**: A library and toolset for
+  assembling, disassembling, and interpreting CHIP-8 and SCHIP code.
+- **[mbta2rss](https://github.com/bmoneill/mbta2rss)**: An unofficial program
+  that converts alert feeds and schedules for public transit in Greater Boston
+  to RSS/HTML.
+- **[md2roff](https://github.com/bmoneill/md2roff)**: A markdown to roff (ms or
+  manpage) compiler.
+- **[OverAchiever](https://overachiever.io)**: An achievement manager for Xbox
+  and Steam.
+- **[pygame-mp](https://github.com/pygame-mp/pygame-mp)**: A framework for
+  multiplayer game development based on Pygame.
+- **[raycast](https://github.com/bmoneill/raycast)**: A Wolfenstein-3D style
+  raycasting library.
+- **[recipes](https://github.com/bmoneill/recipes)**: A site that gives you
+  recipe ideas based on the ingredients you currently have.
+- **[scarlet](https://github.com/bmoneill/scarlet)**: A toolchain for building
+  Linux+Busybox recovery OSes small enough to fit in a BIOS chip.
+- **[sreader](https://github.com/bmoneill/sreader)**: A TUI RSS/Atom feed reader.
+- **[swerve](https://github.com/bmoneill/swerve)**: An i386 kernel and C
+  standard library.
+- **[teal](https://github.com/bmoneill/teal)/[tbs](https://github.com/bmoneill/tbs)**:
+  Static site and blog generators in POSIX sh.
+- **[typetest](https://github.com/bmoneill/typetest)**: A typing speed tester.
+- **[zandra](https://github.com/zandralinux/zandra)**: A source-based Linux
+  distribution tailored for legacy hardware and containerized systems.
+
+## Articles
+
+- **[How To Filter Emails Using Notmuch's Virtual Mailboxes](notmuch-neomutt/)**
+- **[The Unbeatable Effectiveness of Sed and Grep](sed-grep/)**
+- **[How To Create a Remote SSH Gateway to a Local OpenBSD Server](sshgateway-openbsd/)**
+- **[How To Create Custom Github README Badges Using GitHub Actions](custom-github-actions-badges/)**
+- **[How To Fix Arch Linux After Windows Breaks It](fix-arch-boot/)**
