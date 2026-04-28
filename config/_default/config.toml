@@ -3,7 +3,7 @@ enableEmoji = false
 googleAnalytics = ""
 ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
 languageCode = "en-us"
-theme = "hugo-classic"
+theme = "hugo-xmin"
 title = "Ben O'Neill"
 
 [markup.goldmark.renderer]
@@ -26,6 +26,11 @@ tabWidth = 4
 description = "A backend-focused developer in the Boston area."
 
 [menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 10
   [[menu.main]]
     identifier = "apps"
     name = "Apps"
