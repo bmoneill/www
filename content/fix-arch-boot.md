@@ -11,6 +11,11 @@ unbootable. If you are in a situation where you may need to boot into Windows
 every once in a while, this guide will show you how to fix your Linux
 installation after Windows inevitably breaks it.
 
+This issue presents itself on my machine as a failure to load GRUB, as well as some
+random kernel filesystem errors when loading the boot partition in a Linux
+chroot environment. My Linux installation is on a completely separate drive from
+the Windows one, so this behavior is especially puzzling and frustrating.
+
 This guide is mainly for Arch Linux but will likely work with other Linux distros
 as well with some modifications, but I recommend using the
 [Arch ISO](https://archlinux.org/download/) to repair your installation. You
@@ -19,10 +24,10 @@ its entirety before following it.
 
 ## Notes
 
-- **MAKE SURE YOU HAVE A SEPARATE /boot PARTITION.** Check via `df -h` on the
-  Live USB.
 - **RUN ALL COMMANDS FROM THIS GUIDE AT YOUR OWN RISK. I AM NOT LIABLE FOR ANY
   DAMAGE OR LOSS OF DATA.**
+- **MAKE SURE YOU HAVE A SEPARATE /boot PARTITION.** Check via `df -h` on the
+  Live USB.
 - This guide assumes you are using an Arch-based distro with GRUB.
 
 ## Set Up
@@ -51,7 +56,8 @@ mount /dev/sda3 /mnt/home # Home partition
 ```
 
 Make sure you mount **all** partitions used by your Linux installation, as we will
-need the entire filesystem set up for the fstab.
+need the entire filesystem set up for the fstab. If there are others (e.g. separate
+`/home` partition), make sure to mount them.
 
 ## Reinstall GRUB and Linux
 
