@@ -17,12 +17,12 @@ and web development projects under my belt.
 
 ## Articles
 
-- **[How To Filter Emails Using Notmuch's Virtual Mailboxes](notmuch-neomutt/)**
+- **[How To Filter Emails Using Notmuch's Virtual Mailboxes](articles/notmuch-neomutt/)**
 
-- **[The Unbeatable Effectiveness of Sed and Grep](sed-grep/)**
-- **[How To Create a Remote SSH Gateway to a Local OpenBSD Server](sshgateway-openbsd/)**
-- **[How To Create Custom Github README Badges Using GitHub Actions](custom-github-actions-badges/)**
-- **[How To Fix Arch Linux After Windows Breaks It](fix-arch-boot/)**
+- **[The Unbeatable Effectiveness of Sed and Grep](articles/sed-grep/)**
+- **[How To Create a Remote SSH Gateway to a Local OpenBSD Server](articles/sshgateway-openbsd/)**
+- **[How To Create Custom Github README Badges Using GitHub Actions](articles/custom-github-actions-badges/)**
+- **[How To Fix Arch Linux After Windows Breaks It](articles/fix-arch-boot/)**
 
 ## Featured Projects
 
@@ -30,23 +30,23 @@ See [Apps](apps) for more projects hosted here, and my
 [GitHub page](https://github.com/bmoneill) for small, older, or unfinished
 projects not listed here.
 
-- **[arena](https://github.com/bmoneill/arena)**: An Arena memory allocator.
+- **[arena](https://github.com/bmoneill/arena)**: An Arena memory allocator ([Writeup](writeups/arena/)).
 
 - **[bfx](https://github.com/bmoneill/bfx)**: An interpreter, compiler,
-  and REPL for brainfuck and some of its derivatives.
+  and REPL for brainfuck and some of its derivatives ([Writeup](writeups/bfx)).
 - **[dwmtemplate](https://github.com/bmoneill/dwmtemplate)**: A macro system
   for Linux window managers.
 - **[enigma](https://github.com/bmoneill/enigma)**: A library for simulating and
-  cracking the Enigma machine ([Web demo](https://oneill.sh/apps/enigma)).
+  cracking the Enigma machine ([Web demo](https://oneill.sh/apps/enigma), [Writeup](writeups/enigma/)).
 - **[libc8](https://github.com/bmoneill/libc8)**: A library and toolset for
-  assembling, disassembling, and interpreting CHIP-8 and SCHIP code.
+  assembling, disassembling, and interpreting CHIP-8 and SCHIP code ([Writeup](writeups/libc8)).
 - **[mbta2rss](https://github.com/bmoneill/mbta2rss)**: An unofficial program
   that converts alert feeds and schedules for public transit in Greater Boston
   to RSS/HTML.
 - **[md2roff](https://github.com/bmoneill/md2roff)**: A markdown to roff (ms or
   manpage) compiler.
 - **[OverAchiever](https://overachiever.io)**: An achievement manager for Xbox
-  and Steam.
+  and Steam ([Writeup](writeups/overachiever)).
 - **[pygame-mp](https://github.com/pygame-mp/pygame-mp)**: A framework for
   multiplayer game development based on Pygame.
 - **[raycast](https://github.com/bmoneill/raycast)**: A Wolfenstein-3D style
