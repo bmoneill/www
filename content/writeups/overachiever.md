@@ -1,6 +1,6 @@
 ---
-title: "Overachiever: A , disassembling, and interpreting CHIP-8 and SCHIP code"
-description: "A writeup on libc8, a library for assembling, disassembling, and interpreting CHIP-8 and SCHIP code"
+title: "Overachiever: A Web Application for Tracking Xbox and Steam Achievements"
+description: "A writeup on overachiever, a web application for tracking and managing gaming achievements across Xbox and Steam."
 date: 2026-07-20T15:23:11-04:00
 draft: false
 tags:
