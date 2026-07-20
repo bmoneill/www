@@ -51,8 +51,6 @@ projects not listed here.
   multiplayer game development based on Pygame.
 - **[raycast](https://github.com/bmoneill/raycast)**: A Wolfenstein-3D style
   raycasting library.
-- **[recipes](https://github.com/bmoneill/recipes)**: A site that gives you
-  recipe ideas based on the ingredients you currently have.
 - **[scarlet](https://github.com/bmoneill/scarlet)**: A toolchain for building
   Linux+Busybox recovery OSes small enough to fit in a BIOS chip.
 - **[sreader](https://github.com/bmoneill/sreader)**: A TUI RSS/Atom feed reader.
