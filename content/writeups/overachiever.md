@@ -27,8 +27,12 @@ I built Overachiever to solve a problem common among players who use multiple
 gaming platforms: achievement progress is fragmented across different
 ecosystems. Xbox and Steam each provide their own achievement systems, but there
 is no single place to view a complete gaming profile. In addition, I wanted to provide
-a platform which users can share their progress, contribute achievement guides, and
-compare their gaming accomplishments with friends.
+a platform which users can share their progress, contribute achievement guides,
+and compare their gaming accomplishments with friends. Finally, I wanted to provide
+a public-facing application that performs better than the Xbox web and mobile
+interface, which is slow and difficult to navigate when viewing large
+collections of games and achievements, and requires a user to be logged in to a
+Microsoft account.
 
 The goal was to build a full-stack application that combines API integration,
 data processing, user accounts, and visualization into a practical product
