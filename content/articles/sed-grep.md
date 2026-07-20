@@ -2,7 +2,7 @@
 title: "The Unbeatable Effectiveness of Sed and Grep"
 description: ""
 date: 2021-01-02T22:07:08-04:00
-draft: false
+draft: true
 ---
 
 Using the shell effectively in a Unix-like environment must show a

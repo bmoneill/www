@@ -2,7 +2,7 @@
 title: "How To Filter Emails Using Notmuch's Virtual Mailboxes"
 description: "A tutorial on how to filter emails containing specific keywords using Notmuch and Neomutt"
 date: 2021-01-01T22:07:08-04:00
-draft: false
+draft: true
 ---
 
 [Notmuch](https://notmuchmail.org/) is a very powerful tool for managing email,

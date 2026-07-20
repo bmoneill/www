@@ -2,7 +2,7 @@
 title: "How To Create a Remote SSH Gateway to a Local OpenBSD Server"
 description: "A tutorial on how to create a remote SSH gateway to a local OpenBSD server"
 date: 2023-01-01T22:07:08-04:00
-draft: false
+draft: true
 ---
 
 Hosting a server on your local network can provide many advantages, such as

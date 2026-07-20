@@ -2,7 +2,7 @@
 title: "How To Fix Arch Linux After Windows Breaks It"
 description: "A tutorial on how to fix your Arch installation after Windows renders it unbootable"
 date: 2026-04-16T10:23:11-04:00
-draft: false
+draft: true
 ---
 
 If you dual boot Windows and Linux, especially if your Windows installation uses

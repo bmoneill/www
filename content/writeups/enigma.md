@@ -1,7 +1,7 @@
 ---
 title: "enigma: A library for simulating and cracking the Enigma machine"
 description: "A writeup on enigma, a library for simulating and cracking the Enigma machine"
-draft: false
+draft: true
 ---
 
 [enigma](https://github.com/bmoneill/enigma) is a C99 library for simulating and
