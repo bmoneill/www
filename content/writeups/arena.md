@@ -1,9 +1,7 @@
 ---
 title: "arena: A Memory Allocator"
 description: "A C99 arena memory manager that provides a high-performance alternative to general-purpose heap allocation."
-date: 2026-07-20T15:23:11-04:00
 draft: false
-tags: ["C", "Systems Programming", "Memory Management"]
 ---
 
 [arena](https://github.com/bmoneill/arena) is a C99 arena memory manager that

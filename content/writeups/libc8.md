@@ -1,18 +1,7 @@
 ---
 title: "libc8: A library for assembling, disassembling, and interpreting CHIP-8 and SCHIP code"
 description: "A writeup on libc8, a library for assembling, disassembling, and interpreting CHIP-8 and SCHIP code"
-date: 2026-07-20T15:23:11-04:00
 draft: false
-tags:
-  [
-    "C",
-    "Emulator Development",
-    "Interpreters",
-    "Virtual Machines",
-    "Compiler Design",
-    "Systems Programming",
-    "SDL2",
-  ]
 ---
 
 [libc8](https://github.com/bmoneill/libc8) is a C99 library and toolkit for

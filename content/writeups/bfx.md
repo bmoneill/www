@@ -1,10 +1,7 @@
 ---
 title: "bfx: A Tape-Based Esolang Interpreter, Compiler, and REPL"
 description: "A writeup on bfx, an interpreter, compiler, and REPL for tape-based esolangs"
-date: 2026-07-20T15:23:11-04:00
 draft: false
-tags:
-  ["C", "Systems Programming", "Compiler Design", "Esolangs", "Interpreters"]
 ---
 
 [bfx](https://github.com/bmoneill/bfx) is a Brainfuck toolkit written in C99

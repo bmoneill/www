@@ -1,9 +1,7 @@
 ---
 title: "enigma: A library for simulating and cracking the Enigma machine"
 description: "A writeup on enigma, a library for simulating and cracking the Enigma machine"
-date: 2026-07-20T15:23:11-04:00
 draft: false
-tags: ["C", "Cryptography", "Systems Programming"]
 ---
 
 [enigma](https://github.com/bmoneill/enigma) is a C99 library for simulating and

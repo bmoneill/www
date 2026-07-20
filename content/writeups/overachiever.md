@@ -1,18 +1,7 @@
 ---
 title: "Overachiever: A Web Application for Tracking Xbox and Steam Achievements"
 description: "A writeup on overachiever, a web application for tracking and managing gaming achievements across Xbox and Steam."
-date: 2026-07-20T15:23:11-04:00
 draft: false
-tags:
-  [
-    "C",
-    "Emulator Development",
-    "Interpreters",
-    "Virtual Machines",
-    "Compiler Design",
-    "Systems Programming",
-    "SDL2",
-  ]
 ---
 
 Overachiever is a web application for tracking and managing gaming achievements
