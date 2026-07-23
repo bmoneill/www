@@ -4,11 +4,13 @@ description: "A writeup on overachiever, a web application for tracking and mana
 draft: true
 ---
 
-Overachiever is a web application for tracking and managing gaming achievements
-across Xbox and Steam. It provides a unified dashboard where users can view
-achievement progress, compare completion statistics, and organize their gaming
-history across multiple platforms. The project integrates external gaming APIs
-to collect achievement data and presents it through a centralized interface.
+[Overachiever](https://overachiever.io)
+([source](https://github.com/bmoneill/overachiever)) is a web application for
+tracking and managing gaming achievements across Xbox and Steam. It provides a
+unified dashboard where users can view achievement progress, compare completion
+statistics, and organize their gaming history across multiple platforms. The
+project integrates external gaming APIs to collect achievement data and presents
+it through a centralized interface.
 
 ## Motivation
 
