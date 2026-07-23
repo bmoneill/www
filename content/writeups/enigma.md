@@ -60,6 +60,7 @@ authoritative reference material and known outputs.
 
 ## Future Work
 
+- Cryptanalysis CLI
 - Expand support for additional historical Enigma variants and accessories.
 - Optimize cryptanalysis algorithms through parallelization and search-space reduction.
 - Add performance benchmarking and profiling tools.

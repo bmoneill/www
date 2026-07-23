@@ -23,10 +23,6 @@ interface, which is slow and difficult to navigate when viewing large
 collections of games and achievements, and requires a user to be logged in to a
 Microsoft account.
 
-The goal was to build a full-stack application that combines API integration,
-data processing, user accounts, and visualization into a practical product
-rather than a simple API wrapper.
-
 ## Technical Highlights
 
 - Built a full-stack web application for tracking Xbox and Steam achievements.
@@ -52,10 +48,10 @@ responses into a consistent internal model.
 Another challenge was designing the database and synchronization logic to
 efficiently handle large achievement libraries while avoiding unnecessary API
 requests. Steam achievement icons are very large and require careful handling to
-avoid excessive bandwidth usage, and XBox 360 achievement icons are not available
-via a public API. These limitations were overcome by caching, downscaling, and storing
-achievement icons locally, and by using Steam achievement icons as a fallback
-for Xbox achievements.
+avoid excessive bandwidth and storage usage, and XBox 360 achievement icons are
+not available via a public API. These limitations were overcome by caching,
+downscaling, and storing achievement icons locally, and by using Steam
+achievement icons as a fallback for Xbox achievements.
 
 ## What I Learned
 
@@ -69,7 +65,7 @@ consistency, and privacy considerations.
 
 ## Future Work
 
-- Add support for additional gaming platforms.
+- Add support for additional gaming platforms (e.g. PlayStation).
 - Expand achievement statistics and player analytics.
 - Implement social features such as friend comparisons and leaderboards.
 - Improve recommendation features based on incomplete achievements.

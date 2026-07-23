@@ -5,13 +5,13 @@ draft: true
 ---
 
 [libc8](https://github.com/bmoneill/libc8) is a C99 library and toolkit for
-working with CHIP-8 and Super CHIP-8 programs. It provides an emulator,
-assembler, and disassembler, allowing users to execute, create, analyze, and
-debug CHIP-8 software. The project is designed as a reusable library rather than
-a standalone emulator, exposing components that can be integrated into other
-applications. CHIP-8 projects commonly combine virtual machine execution with
-tooling such as assemblers and disassemblers to create complete development
-environments.
+working with CHIP-8 and Super CHIP-8 programs. It provides an emulator with
+a built-in debugger, an assembler, and a disassembler, allowing users to
+execute, create, analyze, and debug CHIP-8 software. The project is designed as
+a reusable library rather than a standalone emulator, exposing components that
+can be integrated into other applications. CHIP-8 projects commonly combine
+virtual machine execution with tooling such as assemblers and disassemblers to
+create complete development environments.
 
 ## Motivation
 
@@ -41,6 +41,8 @@ disassembled, and debugged using the same underlying library.
 - Integrated graphics and input support through SDL2.
 - Integrated support for Super CHIP-8 extensions, quirks, and color themes.
 - Built the project with CMake for simplified compilation and portability.
+- Tested using a suite of CHIP-8 test ROMs to verify correctness and
+  compatibility with existing implementations.
 
 ## Challenges
 
@@ -53,10 +55,16 @@ Developing the assembler and disassembler alongside the emulator also introduced
 challenges around maintaining consistency between source code, binary
 instructions, and runtime execution. Keeping these components synchronized
 required a shared understanding of the CHIP-8 instruction set rather than
-treating each tool as an isolated implementation. A specific challenge in this sphere
-was handling instructions whose mnemonics do not directly map to the opcode. Utilizing
-a shared instruction table across the emulator, assembler, and disassembler made
-it necessary to implement workarounds for these instructions.
+treating each tool as an isolated implementation.
+
+Another specific challenge in this sphere was handling instructions whose
+mnemonics do not directly map to the opcode. For most instructions, there is
+a mnemonic and two operands, which map directly to the opcode in a
+straightforward way. However, some instructions, such as `LD Vx, DT`, `LD Vx, I`,
+where one or more operands are not general registers, require special handling.
+In these cases, there is not a direct mapping to the opcode, so the assembler and
+disassembler must implement special handling for these cases. The worst offender
+here is `JP V0, addr`, where `V0` is not placed in the opcode at all.
 
 ## What I Learned
 
